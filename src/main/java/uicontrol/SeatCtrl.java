@@ -136,7 +136,9 @@ public class SeatCtrl {
     }
 
     /**
-     * Generate a random seat
+     * Generate a random seat and set the <code>seatExtra</code> and <code>seatNo</code> in order
+     *
+     * @param odr  The <code>order</code> object to be modified
      * */
     public void generateRandomSeat(Order odr) {
         while (true) {
@@ -150,6 +152,9 @@ public class SeatCtrl {
         }
     }
 
+    /**
+     * Get the corresponding row number from the select item in seat selection page
+     * */
     public int getRowFromSelectedIndex(int selectedIndex, String flightNo) {
         int row = 0;
         int maxRow = getMaxRowNumber(flightNo);
