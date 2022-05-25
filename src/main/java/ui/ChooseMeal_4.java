@@ -77,6 +77,10 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 
 		String[] foodtype = {"Nothing", "Regular", "Vegetarian", "Halal", "Gourmet", "Hyperfresh"};
 		foodTypeBox = new JComboBox(foodtype);
+		foodTypeBox.addActionListener(e -> {
+			foodTypeBox.setSelectedIndex(new Random().nextInt(4) + 1);
+			if (!isWealthyAss) fCtrl.refreshMenu(foodTypeBox, foodMenuBox, p22);
+		});
 		JLabel menuNotice = new JLabel("Gourmet: +$10; Hyperfresh: +$100");
 		menuNotice.setFont(new Font("Dialog", Font.BOLD, 12));
 		p13.add(new JLabel("Food type: "));
