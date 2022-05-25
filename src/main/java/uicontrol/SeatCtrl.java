@@ -154,6 +154,10 @@ public class SeatCtrl {
 
     /**
      * Get the corresponding row number from the select item in seat selection page
+     *
+     * @param selectedIndex  The selected index from the page
+     * @param flightNo  The flight number that the passenger is to take
+     * @return The row number
      * */
     public int getRowFromSelectedIndex(int selectedIndex, String flightNo) {
         int row = 0;
@@ -174,6 +178,12 @@ public class SeatCtrl {
         return row;
     }
 
+   /**
+     * Gets the max row number according to the plane type of the flight which flight number is the same as input
+     *
+     * @param flightno  Flight number
+     * @return The max row number of the plane
+     * */
     public int getMaxRowNumber(String flightno) {
         String regNo = new FlightDAO().getFlight(flightno).getRegisterno();
         Plane p = new PlaneDAO().getPlane(regNo);
@@ -187,6 +197,12 @@ public class SeatCtrl {
         }
     }
 
+    /**
+     * Gets the column number according to the plane type of the flight which flight number is the same as input
+     *
+     * @param flightno  Flight number
+     * @return The column number of the plane
+     * */
     public int getColNumber(String flightno) {
         String regNo = new FlightDAO().getFlight(flightno).getRegisterno();
         Plane p = new PlaneDAO().getPlane(regNo);
@@ -199,12 +215,18 @@ public class SeatCtrl {
         }
     }
 
+    /**
+     * Gets the extra price for the given row number. First class -> 1000 extra bucks, extra legroom -> 100 extra bucks.
+     *
+     * @param row  The row number
+     * @return The corresponding extra fee
+     * */
     public int calculateSeatExtra(int row) {
         switch (row) {
-            case 1 -> {
+            case 1, 2, 3 -> {
                 return 1000;
             }
-            case 4 -> {
+            case 12 -> {
                 return 100;
             }
             default -> {
