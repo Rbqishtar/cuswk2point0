@@ -149,19 +149,4 @@ public class OrderInfo_5 extends JFrame implements ActionListener {
 		
 	}
 
-	public static void main(String[] args) {
-		Order odr = new Order();
-		odr.setFlightNo("1");
-		odr.setIdnum("2");
-		odr.setFoodMenu("3");
-		odr.setFoodType("4");
-		odr.setSeatno("5");
-		odr.setMealExtra(6);
-		odr.setSeatExtra(7);
-		odr.setFlightDate("8");
-		odr.setDrink("9");
-		OrderInfo_5 o5 = new OrderInfo_5(odr);
-		o5.setVisible(true);
-	}
-
 }
