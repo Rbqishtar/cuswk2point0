@@ -10,8 +10,18 @@ import entitydao.PlaneDAO;
 
 import javax.swing.*;
 
+/**
+ * The controller for info confirmation page, responsible for communicating between it and <code>FlightDAO, PassengerDAO, PlaneDAO</code>
+ * */
 public class ShowInfoCtrl {
 
+    /**
+     * Get the detail of the flight information of the passenger, as well as some information about himself. The results are passed
+     * as a <code>JsonObject</code> from <code>Gson</code> for better visualization.
+     *
+     * @param idNumAndFlightNo The id number of the passenger and flight number of his flight
+     * @return The <code>JsonObject</code> containing the details
+     * */
     public JsonObject fetchDetail(String[] idNumAndFlightNo) {
         if (idNumAndFlightNo.length != 2) {
             JOptionPane.showConfirmDialog(null, "Error in array length fetched from page 1");
@@ -34,6 +44,11 @@ public class ShowInfoCtrl {
         return jsonObj;
     }
 
+    /**
+     * Fetch the information about the plane of thr flight and put it into a <code>JOptionPane</code>
+     *
+     * @param jsonObj  The <code>JsonObject</code> fetched before
+     * */
     public void seePlane(JsonObject jsonObj) {
         PlaneDAO pldao = new PlaneDAO();
         Plane pl = pldao.getPlane(jsonObj.get("Registration number").getAsString());
