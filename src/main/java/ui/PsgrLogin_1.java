@@ -5,10 +5,10 @@ import uicontrol.PsgrLoginCtrl;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.Label;
-import java.awt.Font;
+
 /**
  * Creates the passenger 'login' or check-in page. <p> The passenger can begin checking in by entering his
  * id number or booking number into the <code>input</code> text field.
@@ -18,6 +18,7 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 	private JPanel contentPane;
 	private JTextField input;
 	private JButton backOption, proceedOption;
+	private JPanel p1, p2, p3, p11, p12, p21, p22, p31, p32;
 	/**
 	 * The constructor
 	 *
@@ -28,27 +29,36 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		contentPane.setLayout(new GridLayout(3, 1, 0, 0));
 
-		Label label = new Label("Please enter your ID number or booking number");
+		p1 = new JPanel(); p2 = new JPanel(); p3 = new JPanel();
+		p11 = new JPanel(); p12 = new JPanel();
+		p21 = new JPanel(); p22 = new JPanel();
+		p31 = new JPanel(); p32 = new JPanel();
+
+		for (JPanel jp: new JPanel[]{p1, p2, p3}) contentPane.add(jp);
+		p2.add(p21);
+		p2.add(p22);
+		p3.add(p32);
+
+		JLabel label = new JLabel("Enter your ID number or booking number");
 		label.setFont(new Font("Dialog", Font.PLAIN, 24));
-		label.setBounds(68, 120, 460, 72);
-		contentPane.add(label);
-
-		backOption = new JButton("<< Back");
-		backOption.setBounds(94, 212, 159, 38);
-		backOption.addActionListener(this);
-		contentPane.add(backOption);
-
-		proceedOption = new JButton("Go");
-		proceedOption.setBounds(321, 212, 159, 38);
-		proceedOption.addActionListener(this);
-		contentPane.add(proceedOption);
+		p21.add(label);
 
 		input = new JTextField();
-		input.setBounds(113, 280, 352, 38);
-		contentPane.add(input);
 		input.setColumns(10);
+		input.setFont(new Font("Dialog", Font.PLAIN, 18));
+		p22.add(input);
+
+		backOption = new JButton("<< Back");
+		backOption.addActionListener(this);
+		p32.add(backOption);
+
+		proceedOption = new JButton("Go");
+		proceedOption.addActionListener(this);
+		p22.add(proceedOption);
+
+
 	}
 
 	/**
