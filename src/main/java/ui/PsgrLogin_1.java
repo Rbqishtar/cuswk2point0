@@ -17,13 +17,15 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 
 	private JPanel contentPane;
 	private JTextField input;
-	private JButton backOption, proceedOption;
+	private JButton backOption, proceedOption,forgetOption;
 	private JPanel p1, p2, p3, p11, p12, p21, p22, p31, p32;
+	private boolean state;
 	/**
 	 * The constructor
 	 *
 	 * */
 	public PsgrLogin_1() {
+		state = true;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 400);
 		contentPane = new JPanel();
@@ -36,13 +38,14 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 		p21 = new JPanel(); p22 = new JPanel();
 		p31 = new JPanel(); p32 = new JPanel();
 
+
 		for (JPanel jp: new JPanel[]{p1, p2, p3}) contentPane.add(jp);
 		p2.add(p21);
 		p2.add(p22);
 		p3.add(p32);
 
-		JLabel label = new JLabel("Enter your ID number or booking number");
-		label.setFont(new Font("Dialog", Font.PLAIN, 24));
+		JLabel label = new JLabel("Enter your booking number");
+		label.setFont(new Font("Dialog", Font.PLAIN, 28));
 		p21.add(label);
 
 		input = new JTextField();
@@ -53,6 +56,12 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 		backOption = new JButton("<< Back");
 		backOption.addActionListener(this);
 		p32.add(backOption);
+		forgetOption = new JButton("Forget your booking number?");
+		forgetOption.addActionListener(e -> {
+			label.setText("Enter your ID number or surname");
+			state = false;
+		});
+		p3.add(forgetOption);
 
 		proceedOption = new JButton("Go");
 		proceedOption.addActionListener(this);
@@ -65,9 +74,9 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 	 * Defines the action to be performed after pressing 2 buttons on this frame.<p>
 	 If the <code>proceedOption</code> is pressed, the system will check:
 	 <ol>
-	 	<li>Whether the passenger has entered anything</li>
-	 	<li>Whether the passenger has checked in before</li>
-	 	<li>Whether the input matches the data recorded in files or not</li>
+	 <li>Whether the passenger has entered anything</li>
+	 <li>Whether the passenger has checked in before</li>
+	 <li>Whether the input matches the data recorded in files or not</li>
 	 </ol>
 	 If everything is OK, the user will be brought to the next page. If not, he will receive the cprresponding
 	 alert and will not go to thenext page.<p>
@@ -79,7 +88,7 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == proceedOption) {
 			PsgrLoginCtrl plc = new PsgrLoginCtrl();
-			if (plc.canGetDetail(input.getText())) {
+			if (plc.canGetDetail(input.getText(),state)) {
 				String[] idNumAndFlightNo = plc.getIdnumAndFlightNo(input.getText());
 				Order checkodr = plc.getExistingOrder(idNumAndFlightNo[0], idNumAndFlightNo[1]);
 				if (checkodr.getSeatno() == null) {
@@ -89,7 +98,7 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 				} else {
 					plc.alertCheckedIn(checkodr);
 				}
-			} else JOptionPane.showConfirmDialog(null, "No booking");
+			} else JOptionPane.showConfirmDialog(null, "No booking information");
 		}
 		else if (e.getSource() == backOption) {
 			Welcome_0 p0 = new Welcome_0();
