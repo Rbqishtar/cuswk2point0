@@ -88,7 +88,7 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == proceedOption) {
 			PsgrLoginCtrl plc = new PsgrLoginCtrl();
-			if (plc.canGetDetail(input.getText(), state)) {
+			if (plc.canGetDetail(input.getText())) {
 				String[] idNumAndFlightNo = plc.getIdnumAndFlightNo(input.getText());
 				Order checkodr = plc.getExistingOrder(idNumAndFlightNo[0], idNumAndFlightNo[1]);
 				if (checkodr.getSeatno() == null) {

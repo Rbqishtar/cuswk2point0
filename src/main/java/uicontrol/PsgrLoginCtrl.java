@@ -20,7 +20,7 @@ public class PsgrLoginCtrl {
      * @param arg  The input from the passenger to be passed to <code>BookingDAO</code>
      * @return <code>false</code> if there are no bookings for the input, <code>true</code> otherwise
      * */
-    public boolean canGetDetail(String arg,boolean state) {
+    public boolean canGetDetail(String arg) {
         JsonArray jsonArr = new BookingDAO().getBooking(arg);
         if (jsonArr.size() == 0) return false;
         else return true;
