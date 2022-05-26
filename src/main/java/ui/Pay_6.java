@@ -3,6 +3,7 @@ package ui;
 import entity.Order;
 import uicontrol.PaymentCtrl;
 import uiutility.PageFinalisation;
+import uiutility.PageSwitchHelper;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -151,13 +152,10 @@ public class Pay_6 extends JFrame implements ActionListener {
 		String s3 = input3.getText();
 
 		if (e.getSource() == cancelOption) {
-			Welcome_0 p0 = new Welcome_0();
-			this.setVisible(false);
-			p0.setVisible(true);
+			if (JOptionPane.showConfirmDialog(null, "Sure?", "Sure?", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
+				PageSwitchHelper.goToPage(this, null, 0);
 		} else if (e.getSource() == backOption) {
-			OrderInfo_5 p5 = new OrderInfo_5(odr);
-			this.setVisible(false);
-			p5.setVisible(true);
+			PageSwitchHelper.goToPage(this, odr, 5);
 		} else if (e.getSource() == proceedOption) {
 			if (pc.verifyPayment((String)payMethod.getSelectedItem(), s1, s2, s3)) {
 				PageFinalisation pf = new PageFinalisation();

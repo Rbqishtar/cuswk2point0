@@ -2,6 +2,8 @@ package ui;
 
 import entity.Order;
 import uicontrol.FoodCtrl;
+import uiutility.PageSwitchHelper;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -37,9 +39,11 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 	 * @param odr  Bring the information from prior pages, and record <code>foodType, foodExtra, foodMenu and drink</code> in this page.
 	 */
 	public ChooseMeal_4(Order odr) {
+
 		this.odr = odr;
 		fCtrl = new FoodCtrl();
-		isWealthyAss = (odr.getSeatno().charAt(0) == '1') && (odr.getSeatno().length() == 2);
+		isWealthyAss = (Integer.parseInt(String.valueOf(odr.getSeatno().charAt(0))) <= 3) && (odr.getSeatno().length() == 2);
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 400, 400);
 		contentPane = new JPanel();
@@ -78,8 +82,11 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 		String[] foodtype = {"Nothing", "Regular", "Vegetarian", "Halal", "Gourmet", "Hyperfresh"};
 		foodTypeBox = new JComboBox(foodtype);
 		foodTypeBox.addActionListener(e -> {
-			foodTypeBox.setSelectedIndex(new Random().nextInt(4) + 1);
-			if (!isWealthyAss) fCtrl.refreshMenu(foodTypeBox, foodMenuBox, p22);
+			if (!isWealthyAss) {
+				fCtrl.refreshMenu(foodTypeBox, foodMenuBox);
+				p22.setVisible(true);
+				p23.setVisible(true);
+			}
 		});
 		JLabel menuNotice = new JLabel("Gourmet: +$10; Hyperfresh: +$100");
 		menuNotice.setFont(new Font("Dialog", Font.BOLD, 12));
@@ -92,10 +99,15 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 		okType.addActionListener(this);
 		randomType.addActionListener(e -> {
 			foodTypeBox.setSelectedIndex(new Random().nextInt(4) + 1);
-			if (!isWealthyAss) fCtrl.refreshMenu(foodTypeBox, foodMenuBox, p22);
+			if (!isWealthyAss) {
+				fCtrl.refreshMenu(foodTypeBox, foodMenuBox);
+				p22.setVisible(true);
+				p23.setVisible(true);
+			}
 		});
 		p21.add(okType);
 		p21.add(randomType);
+		if (!isWealthyAss) okType.setVisible(false);
 
 		foodMenuBox = new JComboBox();
 		randomMenu = new JButton("Random");
@@ -124,9 +136,7 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 		odr.setFoodMenu("Premium");
 		if (odr.getDrink().equals("Nothing")) JOptionPane.showConfirmDialog(null, "You chose to drink nothing");
 		if (odr.getFoodType().equals("Nothing")) JOptionPane.showConfirmDialog(null, "You chose to eat nothing");
-		OrderInfo_5 f5 = new OrderInfo_5(odr);
-		this.setVisible(false);
-		f5.setVisible(true);
+		PageSwitchHelper.goToPage(this, odr, 5);
 	}
 
 	/**
@@ -166,19 +176,12 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == okType) {
-			if (isWealthyAss)
-				serveFirstClass();
-			else {
-				fCtrl.refreshMenu(foodTypeBox, foodMenuBox, p22);
-				if (!p23.isVisible()) p23.setVisible(true);
-			}
+			serveFirstClass();
 		}
 		else if (e.getSource() == backOption) {
 			odr.setSeatExtra(0);
 			odr.setSeatno("");
-			ChooseSeat_3 c3 = new ChooseSeat_3(odr);
-			this.setVisible(false);
-			c3.setVisible(true);
+			PageSwitchHelper.goToPage(this, odr, 3);
 		}
 		else if (e.getSource() == proceedOption) {
 			if (foodMenuBox.getSelectedIndex() != 0 || foodTypeBox.getSelectedIndex() == 0) {
@@ -188,17 +191,17 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 				odr.setDrink((String)drinkBox.getSelectedItem());
 				odr.setFoodType(type);
 				odr.setFoodMenu((String)foodMenuBox.getSelectedItem());
-				if (odr.getDrink().equals("Nothing")) JOptionPane.showConfirmDialog(null, "You chose to drink nothing");
-				if (odr.getFoodType().equals("Nothing")) JOptionPane.showConfirmDialog(null, "You chose to eat nothing");
-				OrderInfo_5 f5 = new OrderInfo_5(odr);
-				this.setVisible(false);
-				f5.setVisible(true);
-			} else JOptionPane.showConfirmDialog(null, "choose a menu man");
+
+				if (fCtrl.confirmNothingOption(odr))
+					PageSwitchHelper.goToPage(this, odr, 5);
+			} else JOptionPane.showConfirmDialog(null, "choose a menu man", "?", JOptionPane.DEFAULT_OPTION);
 		}
 	}
 
 	public static void main(String[] args) {
-		ChooseMeal_4 f4 = new ChooseMeal_4(null);
+		Order odr = new Order();
+		odr.setSeatno("4A");
+		ChooseMeal_4 f4 = new ChooseMeal_4(odr);
 		f4.setVisible(true);
 	}
 

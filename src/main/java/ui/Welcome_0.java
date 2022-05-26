@@ -1,6 +1,7 @@
 package ui;
 
 import entity.Order;
+import uiutility.PageSwitchHelper;
 
 import java.awt.EventQueue;
 
@@ -43,13 +44,13 @@ public class Welcome_0 extends JFrame implements ActionListener {
 		contentPane.add(label_1);
 		
 		psgrOption = new JButton("Passenger");
-		psgrOption.addActionListener(this);
+		psgrOption.addActionListener(e -> PageSwitchHelper.goToPage(this, null, 1));
 		psgrOption.setFont(new Font("Lucida Grande", Font.PLAIN, 24));
 		psgrOption.setBounds(75, 140, 200, 180);
 		contentPane.add(psgrOption);
 		
 		staffOption = new JButton("Staff");
-		staffOption.addActionListener(this);
+		staffOption.addActionListener(e -> PageSwitchHelper.goToPage(this, null, 9));
 		staffOption.setFont(new Font("Lucida Grande", Font.PLAIN, 24));
 		staffOption.setBounds(325, 140, 200, 180);
 		contentPane.add(staffOption);
@@ -64,15 +65,6 @@ public class Welcome_0 extends JFrame implements ActionListener {
 	* */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
-		if (e.getSource() == psgrOption) {
-			this.setVisible(false);
-			JFrame p1 = new PsgrLogin_1();
-			p1.setVisible(true);
-		} else if (e.getSource() == staffOption) {
-			this.setVisible(false);
-			JFrame p9 = new StaffLogin_9();
-			p9.setVisible(true);
-		}
+
 	}
 }

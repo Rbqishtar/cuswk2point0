@@ -3,6 +3,7 @@ package ui;
 import com.google.gson.JsonObject;
 import entity.Order;
 import uicontrol.ShowInfoCtrl;
+import uiutility.PageSwitchHelper;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -100,8 +101,8 @@ public class ShowFlightInfo_2 extends JFrame implements ActionListener {
 
 		backOption = new JButton("back");
 		nextOption = new JButton("next");
-		backOption.addActionListener(this);
-		nextOption.addActionListener(this);
+		backOption.addActionListener(e -> PageSwitchHelper.goToPage(this, null, 1));
+		nextOption.addActionListener(e -> PageSwitchHelper.goToPage(this, odr, 3));
 		p52.add(backOption);
 		p52.add(nextOption);
 
@@ -122,15 +123,6 @@ public class ShowFlightInfo_2 extends JFrame implements ActionListener {
 	 * */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == backOption) {
-			this.setVisible(false);
-			JFrame f1 = new PsgrLogin_1();
-			f1.setVisible(true);
-		} else if (e.getSource() == nextOption) {
-			this.setVisible(false);
-			JFrame f3 = new ChooseSeat_3(odr);
-			f3.setVisible(true);
-		}
 		
 	}
 

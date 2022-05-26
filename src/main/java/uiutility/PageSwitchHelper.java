@@ -7,7 +7,7 @@ import javax.swing.*;
 
 public class PageSwitchHelper {
 
-    public void goToPage(JFrame currentFrame, Order odr, int flag) {
+    public static void goToPage(JFrame currentFrame, Order odr, int flag) {
         currentFrame.setVisible(false);
         JFrame newFrame = null;
         switch (flag) {
@@ -17,6 +17,7 @@ public class PageSwitchHelper {
             case 4 -> newFrame = new ChooseMeal_4(odr);
             case 5 -> newFrame = new OrderInfo_5(odr);
             case 6 -> newFrame = new Pay_6(odr);
+            case 9 -> newFrame = new StaffLogin_9();
             default -> JOptionPane.showConfirmDialog(null, "pageSwitchHelper error");
         }
         newFrame.setVisible(true);

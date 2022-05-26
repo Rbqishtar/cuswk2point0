@@ -9,9 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Refined BookingDAO.java and relating usages of methods within; Added PageSwitchHelper.java, not yet implemented in code">
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="minor tweaks about code variables">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AA1111_seats.csv" beforeDir="false" afterPath="$PROJECT_DIR$/AA1111_seats.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Order.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseMeal_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseMeal_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/OrderInfo_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/OrderInfo_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Pay_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Pay_6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/PsgrLoginCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uicontrol/PsgrLoginCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ShowFlightInfo_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ShowFlightInfo_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Welcome_0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Welcome_0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/PsgrLogin_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/PsgrLogin_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,7 +113,7 @@
       <recent name="uicontrol" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.ChooseMeal_4">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="cuswk2point0" />
@@ -234,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChooseMeal_4" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.OrderInfo_5" />
         <item itemvalue="Application.StaffDashboard_10" />
         <item itemvalue="JUnit.PsgrLoginCtrlTest" />
-        <item itemvalue="Application.ChooseMeal_4" />
       </list>
     </recent_temporary>
   </component>
@@ -357,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653538842712</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="minor tweaks about code variables">
+      <created>1653539128134</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653539128134</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +425,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Refined BookingDAO.java and relating usages of methods within; Added PageSwitchHelper.java, not yet implemented in code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refined BookingDAO.java and relating usages of methods within; Added PageSwitchHelper.java, not yet implemented in code" />
+    <MESSAGE value="minor tweaks about code variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor tweaks about code variables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

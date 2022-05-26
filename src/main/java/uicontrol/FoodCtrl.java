@@ -1,6 +1,8 @@
 package uicontrol;
 
+import entity.Order;
 import entitydao.MenuDAO;
+import uiutility.PageSwitchHelper;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -36,9 +38,8 @@ public class FoodCtrl {
      *
      * @param jcb  The <code>foodType</code> combo box in the page
      * @param jcbmenu  The<code>foodMenu</code> combo box in the page
-     * @param p22  The <code>JPanel</code> containing the <code>foodMenu</code>. After the menus are fetched, it will be set visible
-     * */
-    public void refreshMenu(JComboBox jcb, JComboBox jcbmenu, JPanel p22) {
+     *                 * */
+    public void refreshMenu(JComboBox jcb, JComboBox jcbmenu) {
         ArrayList<String> menuArrayList = new MenuDAO().getMenu((String)jcb.getSelectedItem());
         DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>();
         String[] menuList = new String[5];
@@ -50,10 +51,20 @@ public class FoodCtrl {
             model = new DefaultComboBoxModel<>(menuList);
         } else {
             model = new DefaultComboBoxModel<>(new String[]{"---"});
-            JOptionPane.showConfirmDialog(null, "You chose nothing for your food", "notice", JOptionPane.YES_OPTION);
         }
         jcbmenu.setModel(model);
-        p22.setVisible(true);
+    }
+
+    public boolean confirmNothingOption(Order odr) {
+        boolean noDrink = true, noFood = true;
+        if (odr.getDrink().equals("Nothing"))
+            if (JOptionPane.showConfirmDialog(null, "No drink?", "?", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION)
+                noDrink = false;
+        if (odr.getFoodType().equals("Nothing"))
+            if (JOptionPane.showConfirmDialog(null, "No food?","?", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION)
+                noFood = false;
+
+        return noDrink && noFood;
     }
 
 }

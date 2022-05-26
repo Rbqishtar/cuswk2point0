@@ -2,6 +2,7 @@ package ui;
 
 import entity.Order;
 import uiutility.PageFinalisation;
+import uiutility.PageSwitchHelper;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -91,7 +92,7 @@ public class OrderInfo_5 extends JFrame implements ActionListener {
 		p41.add(note);
 
 
-		cancelOption = new JButton("Cancel");
+		cancelOption = new JButton("Cancel check in");
 		confirmOption = new JButton("Confirm");
 		cancelOption.addActionListener(this);
 		confirmOption.addActionListener(this);
@@ -122,17 +123,14 @@ public class OrderInfo_5 extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == editSeatOption) {
-			ChooseSeat_3 p6 = new ChooseSeat_3(odr);
-			this.setVisible(false);
-			p6.setVisible(true);
+			odr.setSeatExtra(0);
+			odr.setSeatno("-");
+			PageSwitchHelper.goToPage(this, odr, 3);
 		} else if (e.getSource() == editFoodOption) {
-			ChooseMeal_4 p6 = new ChooseMeal_4(odr);
-			this.setVisible(false);
-			p6.setVisible(true);
+			PageSwitchHelper.goToPage(this, odr, 4);
 		} else if (e.getSource() == cancelOption) {
-			Welcome_0 p0 = new Welcome_0();
-			this.setVisible(false);
-			p0.setVisible(true);
+			if (JOptionPane.showConfirmDialog(null, "Sure?", "Sure?", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
+				PageSwitchHelper.goToPage(this, null, 0);
 		} else if (e.getSource() == confirmOption) {
 			if (note.getText().equals("")) odr.setNote("---");
 			else odr.setNote(note.getText());
@@ -141,9 +139,7 @@ public class OrderInfo_5 extends JFrame implements ActionListener {
 				this.setVisible(false);
 				pf.finaliseEverything(odr);
 			} else {
-				Pay_6 p6 = new Pay_6(odr);
-				this.setVisible(false);
-				p6.setVisible(true);
+				PageSwitchHelper.goToPage(this, odr, 6);
 			}
 		}
 		

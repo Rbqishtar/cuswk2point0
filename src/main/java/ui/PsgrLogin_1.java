@@ -2,6 +2,7 @@ package ui;
 
 import entity.Order;
 import uicontrol.PsgrLoginCtrl;
+import uiutility.PageSwitchHelper;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -54,7 +55,7 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 		p22.add(input);
 
 		backOption = new JButton("<< Back");
-		backOption.addActionListener(this);
+		backOption.addActionListener(e -> PageSwitchHelper.goToPage(this, null, 0));
 		p32.add(backOption);
 		forgetOption = new JButton("Forget your booking number?");
 		forgetOption.addActionListener(e -> {
@@ -100,10 +101,6 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 				}
 			} else JOptionPane.showConfirmDialog(null, "No booking information");
 		}
-		else if (e.getSource() == backOption) {
-			Welcome_0 p0 = new Welcome_0();
-			this.setVisible(false);
-			p0.setVisible(true);
-		}
 	}
+
 }

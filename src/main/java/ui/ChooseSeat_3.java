@@ -2,6 +2,7 @@ package ui;
 
 import entity.Order;
 import uicontrol.SeatCtrl;
+import uiutility.PageSwitchHelper;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -128,8 +129,6 @@ public class ChooseSeat_3 extends JFrame implements ActionListener {
 	 *	       <li>Set <code>seatExtra</code> and <code>seatNo</code> in <code>odr</code>, where the <code>seatExtra</code> is determined by row number</li>
 	 *	       <li>Proceed to next page</li>
 	 *	   </ol>
-	 *	   Specially, if <code>foodType, foodMenu, foodExtra and drink</code> are not <code>null</code>, that means
-	 *	   the passenger came to this page after selecting meals. In this way, he will be brought to the order confirmation page.
 	 * </ol>
 	 *
 	 * */
@@ -137,18 +136,14 @@ public class ChooseSeat_3 extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		SeatCtrl seatCtrl = new SeatCtrl();
 		if (e.getSource() == backToTopOption) {
-			odr = null;
-			Welcome_0 f0 = new Welcome_0();
-			this.setVisible(false);
-			f0.setVisible(true);
+			if (JOptionPane.showConfirmDialog(null, "Sure?", "Sure?", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
+				PageSwitchHelper.goToPage(this, null, 0);
 		} else if (e.getSource() == clearOption) {
 			seat.setSelectedIndex(0);
 			pref.setSelectedIndex(0);
 		} else if (e.getSource() == randomOption) {
 			seatCtrl.generateRandomSeat(odr);
-			ChooseMeal_4 p4 = new ChooseMeal_4(odr);
-			this.setVisible(false);
-			p4.setVisible(true);
+			PageSwitchHelper.goToPage(this, odr, 4);
 		} else if (e.getSource() == confirmOption) {
 			int row = seatCtrl.getRowFromSelectedIndex(pref.getSelectedIndex(), odr.getFlightNo());
 			int col = seat.getSelectedIndex();
@@ -156,22 +151,10 @@ public class ChooseSeat_3 extends JFrame implements ActionListener {
 				if (seatCtrl.canInsertSeat(odr.getFlightNo(), row, col)) {
 					odr.setSeatno(seatCtrl.convertSeatNo(row, col));
 					odr.setSeatExtra(seatCtrl.calculateSeatExtra(row));
-					if (odr.getFoodMenu() == null) {
-						ChooseMeal_4 f4 = new ChooseMeal_4(odr);
-						this.setVisible(false);
-						f4.setVisible(true);
-					} else {
-						OrderInfo_5 f5 = new OrderInfo_5(odr);
-						this.setVisible(false);
-						f5.setVisible(true);
-					}
-				} else JOptionPane.showConfirmDialog(null, "seat not available", "sad", JOptionPane.YES_OPTION);
-			} else JOptionPane.showConfirmDialog(null, "select a column !!!", "?", JOptionPane.YES_OPTION);
-		} else JOptionPane.showConfirmDialog(null, "getsource error", "?", JOptionPane.YES_OPTION);
+					PageSwitchHelper.goToPage(this, odr, 4);
+				} else JOptionPane.showConfirmDialog(null, "seat not available", "sad", JOptionPane.DEFAULT_OPTION);
+			} else JOptionPane.showConfirmDialog(null, "select a column !!!", "?", JOptionPane.DEFAULT_OPTION);
+		} else JOptionPane.showConfirmDialog(null, "getsource error", "?", JOptionPane.DEFAULT_OPTION);
 	}
 
-	public static void main(String[] args) {
-		ChooseSeat_3 f = new ChooseSeat_3(null);
-		f.setVisible(true);
-	}
 }
