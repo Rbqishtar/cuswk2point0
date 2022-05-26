@@ -1,6 +1,8 @@
 package entity;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.Objects;
 
 public class Flight {
 
@@ -66,5 +68,20 @@ public class Flight {
 
 	public void setFlightDate(String date) {
 		this.flightDate = date;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Flight flight = (Flight) o;
+		return Objects.equals(registerno, flight.registerno) && Objects.equals(flightno, flight.flightno) && Objects.equals(takeoffTime, flight.takeoffTime) && Objects.equals(landingTime, flight.landingTime) && Objects.equals(dest, flight.dest) && Objects.equals(flightDate, flight.flightDate) && Arrays.equals(seatlist, flight.seatlist);
+	}
+
+	@Override
+	public int hashCode() {
+		int result = Objects.hash(registerno, flightno, takeoffTime, landingTime, dest, flightDate);
+		result = 31 * result + Arrays.hashCode(seatlist);
+		return result;
 	}
 }

@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.Objects;
+
 public class Order {
 	
 	private String idnum;
@@ -76,4 +78,17 @@ public class Order {
 	public String getNote() { return note; }
 
 	public void setNote(String note) { this.note = note; }
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Order order = (Order) o;
+		return seatExtra == order.seatExtra && mealExtra == order.mealExtra && Objects.equals(idnum, order.idnum) && Objects.equals(flightno, order.flightno) && Objects.equals(flightDate, order.flightDate) && Objects.equals(foodType, order.foodType) && Objects.equals(foodMenu, order.foodMenu) && Objects.equals(seatno, order.seatno) && Objects.equals(drink, order.drink) && Objects.equals(note, order.note);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(idnum, flightno, flightDate, foodType, foodMenu, seatno, drink, seatExtra, mealExtra, note);
+	}
 }

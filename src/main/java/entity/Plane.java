@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.Objects;
+
 public class Plane {
 
         private String registerno;
@@ -23,4 +25,16 @@ public class Plane {
 
         public String getMaxPsgr() { return maxPsgr; }
 
+        @Override
+        public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Plane plane = (Plane) o;
+                return Objects.equals(registerno, plane.registerno) && Objects.equals(model, plane.model) && Objects.equals(columnNum, plane.columnNum) && Objects.equals(maxPsgr, plane.maxPsgr);
+        }
+
+        @Override
+        public int hashCode() {
+                return Objects.hash(registerno, model, columnNum, maxPsgr);
+        }
 }

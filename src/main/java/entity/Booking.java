@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.Objects;
+
 public class Booking {
 
 	private String idnum;
@@ -39,4 +41,16 @@ public class Booking {
 		this.bookingno = bkno; 
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Booking booking = (Booking) o;
+		return tuoyun == booking.tuoyun && Objects.equals(idnum, booking.idnum) && Objects.equals(flightno, booking.flightno) && Objects.equals(bookingno, booking.bookingno);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(idnum, flightno, bookingno, tuoyun);
+	}
 }
