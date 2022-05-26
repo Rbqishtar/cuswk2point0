@@ -114,7 +114,11 @@ public class StaffDashboard_10 extends JFrame implements ActionListener {
 		p31.add(filterOption);
 
 		exitOption = new JButton("Exit");
-		exitOption.addActionListener(e -> System.exit(0));
+		exitOption.addActionListener(e->{
+			Welcome_0 p2 = new Welcome_0();
+			this.setVisible(false);
+			p2.setVisible(true);});
+		//exitOption.addActionListener(e -> System.exit(0));
 		p33.add(exitOption);
 
 	}

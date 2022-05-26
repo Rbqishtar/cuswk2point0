@@ -34,15 +34,9 @@ public class BookingDAO {
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 for (int i=0; i<eachline.length; i++) {
+
                     if (eachline[i].equals(arg)) {
-                        bk.setIdnum(eachline[0]);
-                        bk.setFlightno(eachline[1]);
-                        bk.setBookingno(eachline[2]);
-                        bk.setTuoyun(Boolean.parseBoolean(eachline[3]));
-                        String json = gson.toJson(bk);
-                        JsonObject jsonObj;
-                        jsonObj = gson.fromJson(json, JsonObject.class);
-                        jsonArr.add(jsonObj);
+                        interact(bk, gson, jsonArr, eachline);
                     }
                 }
             }
@@ -52,6 +46,45 @@ public class BookingDAO {
         } finally {
             return jsonArr;
         }
+    }
+    public JsonArray getBookingV2(String arg,boolean state) {
+        //when state=true means retrieving for booking number,state=false means retrieving for ID or surname
+        Booking bk = new Booking();
+        Gson gson = new Gson();
+        JsonArray jsonArr = new JsonArray();
+        String line = "";
+        String splitBy = ",";
+        try {
+            BufferedReader bf = new BufferedReader(new FileReader("Booking.csv"));
+            while ((line = bf.readLine()) != null) {
+                String[] eachline = line.split(splitBy);
+                if(state) {
+                    if (eachline[2].equals(arg)) {
+                        interact(bk, gson, jsonArr, eachline);
+                    }
+                }else{
+                    if (eachline[0].equals(arg)||eachline[4].equals(arg)) {
+                        interact(bk, gson, jsonArr, eachline);
+                    }
+                }
+            }
+            bf.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            return jsonArr;
+        }
+    }
+
+    private void interact(Booking bk, Gson gson, JsonArray jsonArr, String[] eachline) {
+        bk.setIdnum(eachline[0]);
+        bk.setFlightno(eachline[1]);
+        bk.setBookingno(eachline[2]);
+        bk.setTuoyun(Boolean.parseBoolean(eachline[3]));
+        String json = gson.toJson(bk);
+        JsonObject jsonObj;
+        jsonObj = gson.fromJson(json, JsonObject.class);
+        jsonArr.add(jsonObj);
     }
 
     /**
