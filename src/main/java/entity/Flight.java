@@ -12,7 +12,6 @@ public class Flight {
 	private String landingTime;
 	private String dest;
 	private String flightDate;
-	private String[][] seatlist; //[10][6]
 	
 	public String getRegisterno() {
 		return registerno;
@@ -30,14 +29,6 @@ public class Flight {
 		this.flightno = flightno;
 	}
 
-	public String[][] getSeatlist() {
-		return seatlist;
-	}
-
-	public void setSeatlist(String[][] seatlist) {
-		this.seatlist = seatlist;
-	}
-	
 	public String getTakeoffTime() {
 		return takeoffTime;
 	}
@@ -75,13 +66,7 @@ public class Flight {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 		Flight flight = (Flight) o;
-		return Objects.equals(registerno, flight.registerno) && Objects.equals(flightno, flight.flightno) && Objects.equals(takeoffTime, flight.takeoffTime) && Objects.equals(landingTime, flight.landingTime) && Objects.equals(dest, flight.dest) && Objects.equals(flightDate, flight.flightDate) && Arrays.equals(seatlist, flight.seatlist);
+		return Objects.equals(registerno, flight.registerno) && Objects.equals(flightno, flight.flightno) && Objects.equals(takeoffTime, flight.takeoffTime) && Objects.equals(landingTime, flight.landingTime) && Objects.equals(dest, flight.dest) && Objects.equals(flightDate, flight.flightDate);
 	}
 
-	@Override
-	public int hashCode() {
-		int result = Objects.hash(registerno, flightno, takeoffTime, landingTime, dest, flightDate);
-		result = 31 * result + Arrays.hashCode(seatlist);
-		return result;
-	}
 }

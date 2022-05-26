@@ -76,6 +76,10 @@ public class FlightDAO {
             hour -= 1;
             min += 60;
         }
+        if (hour < 0) {
+            hour += 24;
+        }
+
         return hour + "hour " + min + "min";
     }
 
