@@ -45,4 +45,44 @@ class SeatCtrlTest {
     @Test
     void calculateSeatExtra() {
     }
+
+    @Test
+    void testGetSeat() {
+    }
+
+    @Test
+    void testCanInsertSeat() {
+    }
+
+    @Test
+    void testInsertSeat() {
+    }
+
+    @Test
+    void testConvertSeatNo() {
+    }
+
+    @Test
+    void testReConvertSeatNo() {
+    }
+
+    @Test
+    void testGenerateRandomSeat() {
+    }
+
+    @Test
+    void testGetRowFromSelectedIndex() {
+    }
+
+    @Test
+    void testGetMaxRowNumber() {
+    }
+
+    @Test
+    void testGetColNumber() {
+    }
+
+    @Test
+    void testCalculateSeatExtra() {
+    }
 }

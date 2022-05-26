@@ -13,7 +13,7 @@ import entity.Passenger;
  * */
 public class PassengerDAO {
 
-    /**
+     /**
      * Get the passenger by using his <code>idnum</code> as the key. <p>Because there can only exist one passenger per <code>idnum</code>,
      * There is no need to use <code>JsonArray</code> object as in <code>BookingDAO</code>. Instead, the extracted <code>Passenger</code> object was returned.
      *

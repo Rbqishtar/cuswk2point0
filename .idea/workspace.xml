@@ -9,22 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="minor tweaks about code variables">
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Implemented PageSwitchHelper; Refined page switching logic in page 3; Added confirmation JOptionPane in page 4 if passenger selects no food or no drink">
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/BookingDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/FlightDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/MenuDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/OrderDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/PassengerDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/PaymentDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/PlaneDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entitydao/StaffDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uicontrol/FoodCtrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uicontrol/PaymentCtrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uicontrol/PsgrLoginCtrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uicontrol/ShowInfoCtrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uicontrol/StaffDashboardCtrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uicontrol/StaffLoginCtrlTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AA1111_seats.csv" beforeDir="false" afterPath="$PROJECT_DIR$/AA1111_seats.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Order.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseMeal_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseMeal_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/OrderInfo_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/OrderInfo_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Pay_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Pay_6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ShowFlightInfo_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ShowFlightInfo_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Welcome_0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Welcome_0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/PsgrLogin_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/PsgrLogin_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/PassengerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/PassengerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/SeatCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/SeatCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ChooseMeal_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ChooseMeal_4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ShowFlightInfo_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ShowFlightInfo_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Welcome_0.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Welcome_0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uicontrol/FoodCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uicontrol/FoodCtrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uiutility/PageSwitchHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uiutility/PageSwitchHelper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -90,12 +99,16 @@
     </option>
   </component>
   <component name="ProjectId" id="273x1gYPhDyFXgKS6MKwEWmvqbg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
@@ -377,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653539128134</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implemented PageSwitchHelper; Refined page switching logic in page 3; Added confirmation JOptionPane in page 4 if passenger selects no food or no drink">
+      <created>1653542826177</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653542826177</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +446,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="Refined BookingDAO.java and relating usages of methods within; Added PageSwitchHelper.java, not yet implemented in code" />
     <MESSAGE value="minor tweaks about code variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor tweaks about code variables" />
+    <MESSAGE value="Implemented PageSwitchHelper; Refined page switching logic in page 3; Added confirmation JOptionPane in page 4 if passenger selects no food or no drink" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented PageSwitchHelper; Refined page switching logic in page 3; Added confirmation JOptionPane in page 4 if passenger selects no food or no drink" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
