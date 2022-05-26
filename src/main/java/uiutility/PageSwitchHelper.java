@@ -1,38 +1,25 @@
 package uiutility;
 
 import entity.Order;
+import ui.*;
 
 import javax.swing.*;
 
 public class PageSwitchHelper {
 
-    public void goToPage(Order order, int flag) {
+    public void goToPage(JFrame currentFrame, Order odr, int flag) {
+        currentFrame.setVisible(false);
+        JFrame newFrame = null;
         switch (flag) {
-            case 0 -> {
-
-            }
-            case 1 -> {
-
-            }
-            case 2 -> {
-
-            }
-            case 3 -> {
-
-            }
-            case 4 -> {
-
-            }
-            case 5 -> {
-
-            }
-            case 6 -> {
-
-            }
-            default -> {
-                JOptionPane.showConfirmDialog(null, "pageSwitchHelper error");
-            }
+            case 0 -> newFrame = new Welcome_0();
+            case 1 -> newFrame = new PsgrLogin_1();
+            case 3 -> newFrame = new ChooseSeat_3(odr);
+            case 4 -> newFrame = new ChooseMeal_4(odr);
+            case 5 -> newFrame = new OrderInfo_5(odr);
+            case 6 -> newFrame = new Pay_6(odr);
+            default -> JOptionPane.showConfirmDialog(null, "pageSwitchHelper error");
         }
+        newFrame.setVisible(true);
     }
 
 }
