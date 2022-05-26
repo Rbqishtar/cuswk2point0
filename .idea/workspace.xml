@@ -9,18 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Added equal() for test purposes">
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="entityDAO tests completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Order.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/FlightDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/FlightDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/BookingDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/BookingDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/FlightDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/FlightDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/MenuDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/MenuDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/OrderDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/OrderDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/PassengerDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/PassengerDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/PaymentDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/PaymentDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/StaffDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/StaffDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plane.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Plane.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/FoodCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/FoodCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/PaymentCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/PaymentCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/PsgrLoginCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/PsgrLoginCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/SeatCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/SeatCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/ShowInfoCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/ShowInfoCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/StaffDashboardCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/StaffDashboardCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/StaffLoginCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/StaffLoginCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Booking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Passenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Plane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Plane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/FlightDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/FlightDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uicontrol/SeatCtrlTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uicontrol/SeatCtrlTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +119,7 @@
       <recent name="entitydao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StaffDAOTest">
+  <component name="RunManager" selected="JUnit.PaymentCtrlTest.verifyPayment">
     <configuration name="BookingDAO" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="entitydao.BookingDAO" />
       <module name="cuswk2point0" />
@@ -185,89 +190,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PassengerDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodCtrlTest.calculateMealExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="entitydao.*" />
+          <option name="PATTERN" value="uicontrol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="entitydao" />
-      <option name="MAIN_CLASS_NAME" value="entitydao.PassengerDAOTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.FoodCtrlTest" />
+      <option name="METHOD_NAME" value="calculateMealExtra" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodCtrlTest.confirmNothi12213213ngOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="entitydao.*" />
+          <option name="PATTERN" value="uicontrol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="entitydao" />
-      <option name="MAIN_CLASS_NAME" value="entitydao.PaymentDAOTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.FoodCtrlTest" />
+      <option name="METHOD_NAME" value="confirmNothi12213213ngOption" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentDAOTest.verifyPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodCtrlTest.confirmNothin123123gOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="entitydao.*" />
+          <option name="PATTERN" value="uicontrol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="entitydao" />
-      <option name="MAIN_CLASS_NAME" value="entitydao.PaymentDAOTest" />
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.FoodCtrlTest" />
+      <option name="METHOD_NAME" value="confirmNothin123123gOption" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodCtrlTest.confirmNothingOpt2131ion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuswk2point0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uicontrol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.FoodCtrlTest" />
+      <option name="METHOD_NAME" value="confirmNothingOpt2131ion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentCtrlTest.verifyPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuswk2point0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uicontrol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.PaymentCtrlTest" />
       <option name="METHOD_NAME" value="verifyPayment" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaneDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cuswk2point0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="entitydao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="entitydao" />
-      <option name="MAIN_CLASS_NAME" value="entitydao.PlaneDAOTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StaffDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cuswk2point0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="entitydao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="entitydao" />
-      <option name="MAIN_CLASS_NAME" value="entitydao.StaffDAOTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StaffDAOTest" />
-        <item itemvalue="JUnit.PlaneDAOTest" />
-        <item itemvalue="JUnit.PaymentDAOTest" />
-        <item itemvalue="JUnit.PaymentDAOTest.verifyPayment" />
-        <item itemvalue="JUnit.PassengerDAOTest" />
+        <item itemvalue="JUnit.PaymentCtrlTest.verifyPayment" />
+        <item itemvalue="JUnit.FoodCtrlTest.calculateMealExtra" />
+        <item itemvalue="JUnit.FoodCtrlTest.confirmNothi12213213ngOption" />
+        <item itemvalue="JUnit.FoodCtrlTest.confirmNothin123123gOption" />
+        <item itemvalue="JUnit.FoodCtrlTest.confirmNothingOpt2131ion" />
       </list>
     </recent_temporary>
   </component>
@@ -414,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653561293004</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="entityDAO tests completed">
+      <created>1653564113568</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1653564113568</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +482,8 @@
     <MESSAGE value="Implemented PageSwitchHelper; Refined page switching logic in page 3; Added confirmation JOptionPane in page 4 if passenger selects no food or no drink" />
     <MESSAGE value="Added test" />
     <MESSAGE value="Added equal() for test purposes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added equal() for test purposes" />
+    <MESSAGE value="entityDAO tests completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="entityDAO tests completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -475,6 +492,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/uicontrol/GenerationCtrl.java</url>
           <line>26</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
