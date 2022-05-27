@@ -9,12 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="pom.xml is absent, which is weird&#10;uploaded now anyway">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="added dependency for fancy ui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuswk2point0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cuswk2point0.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseMeal_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseMeal_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/StaffDashboard_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/StaffDashboard_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Welcome_0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Welcome_0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/GenerationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/GenerationCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/PageFinalisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/PageFinalisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +65,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.9.0-M1/junit-jupiter-5.9.0-M1.jar!/module-info.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/io/FileInputStream.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -89,11 +95,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -196,7 +201,7 @@
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uicontrol.*" />
+          <option name="PATTERN" value="uiutility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -212,7 +217,7 @@
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uicontrol.*" />
+          <option name="PATTERN" value="uiutility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,7 +233,7 @@
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uicontrol.*" />
+          <option name="PATTERN" value="uiutility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,7 +249,7 @@
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uicontrol.*" />
+          <option name="PATTERN" value="uiutility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -437,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653579032716</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added dependency for fancy ui">
+      <created>1653626564485</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1653626564485</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,20 +504,16 @@
     <MESSAGE value="entityDAO tests completed" />
     <MESSAGE value="All tests completed djlhvwkqld;bhjvkodvhqkl;odbhjkdlbhjkdsbhvwekl;dbhjqhdkl;shjvbkqw" />
     <MESSAGE value="pom.xml is absent, which is weird&#10;uploaded now anyway" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml is absent, which is weird&#10;uploaded now anyway" />
+    <MESSAGE value="added dependency for fancy ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dependency for fancy ui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/uicontrol/GenerationCtrl.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/uiutility/GenerationCtrl.java</url>
           <line>26</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/uicontrol/FoodCtrl.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,13 +20,11 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 	private JTextField input;
 	private JButton backOption, proceedOption,forgetOption;
 	private JPanel p1, p2, p3, p11, p12, p21, p22, p31, p32;
-	private boolean state;
 	/**
 	 * The constructor
 	 *
 	 * */
 	public PsgrLogin_1() {
-		state = true;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 400);
 		contentPane = new JPanel();
@@ -60,7 +58,6 @@ public class PsgrLogin_1 extends JFrame implements ActionListener{
 		forgetOption = new JButton("Forget your booking number?");
 		forgetOption.addActionListener(e -> {
 			label.setText("Enter your ID number or surname");
-			state = false;
 		});
 		p3.add(forgetOption);
 

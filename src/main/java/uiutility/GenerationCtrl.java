@@ -1,4 +1,4 @@
-package uicontrol;
+package uiutility;
 
 import entity.Flight;
 import entity.Order;

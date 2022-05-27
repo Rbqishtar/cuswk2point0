@@ -2,7 +2,7 @@ import com.formdev.flatlaf.FlatIntelliJLaf;
 import ui.Welcome_0;
 
 public class App {
-    // This fucking network is terrible !!!!!!!!!!
+
     public static void main(String[] args) {
         FlatIntelliJLaf.setup();
         System.out.println();

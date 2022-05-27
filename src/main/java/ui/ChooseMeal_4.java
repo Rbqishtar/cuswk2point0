@@ -25,7 +25,6 @@ import java.util.Random;
  * */
 public class ChooseMeal_4 extends JFrame implements ActionListener {
 
-	private FoodCtrl fCtrl;
 	private Order odr;
 	private boolean isWealthyAss;
 	private final JPanel contentPane, p1, p2, p11, p12, p13, p21, p22, p23;
@@ -41,7 +40,7 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 	public ChooseMeal_4(Order odr) {
 
 		this.odr = odr;
-		fCtrl = new FoodCtrl();
+		FoodCtrl fCtrl = new FoodCtrl();
 		isWealthyAss = (Integer.parseInt(String.valueOf(odr.getSeatno().charAt(0))) <= 3) && (odr.getSeatno().length() == 2);
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

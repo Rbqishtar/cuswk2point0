@@ -32,7 +32,6 @@ public class StaffDashboard_10 extends JFrame implements ActionListener {
 	private JScrollPane p2;
 	private JTable jt;
 	private String[] columns = {"Name", "Sex", "Age", "Disabled", "Flight", "Date", "Check in", "Seat", "Food Type", "Food Menu", "Drink", "Note"};
-	private String[][] data;
 	private String[] conds = {"", "", ""};
 	private DefaultTableModel model;
 
@@ -50,7 +49,6 @@ public class StaffDashboard_10 extends JFrame implements ActionListener {
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(3, 0, 0, 0));
 
-		data = new String[200][7];
 		model = new DefaultTableModel();
 		jt = new JTable(model);
 		jt.setFont(new Font("Lucida Grande", Font.PLAIN, 14));

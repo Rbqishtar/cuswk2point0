@@ -4,7 +4,6 @@ import entity.Order;
 import entitydao.BookingDAO;
 import entitydao.OrderDAO;
 import ui.Finish_8;
-import uicontrol.GenerationCtrl;
 import uicontrol.SeatCtrl;
 
 /**
