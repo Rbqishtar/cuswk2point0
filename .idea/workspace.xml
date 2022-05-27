@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="All tests completed djlhvwkqld;bhjvkodvhqkl;odbhjkdlbhjkdsbhvwekl;dbhjqhdkl;shjvbkqw" />
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="pom.xml is absent, which is weird&#10;uploaded now anyway">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cuswk2point0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cuswk2point0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,11 +88,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/main" />
@@ -102,7 +114,14 @@
       <recent name="entitydao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PaymentCtrlTest.verifyPayment">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="cuswk2point0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookingDAO" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="entitydao.BookingDAO" />
       <module name="cuswk2point0" />
@@ -221,22 +240,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodCtrlTest.confirmNothingOpt2131ion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cuswk2point0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uicontrol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uicontrol" />
-      <option name="MAIN_CLASS_NAME" value="uicontrol.FoodCtrlTest" />
-      <option name="METHOD_NAME" value="confirmNothingOpt2131ion" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PaymentCtrlTest.verifyPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuswk2point0" />
       <extension name="coverage">
@@ -255,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.PaymentCtrlTest.verifyPayment" />
         <item itemvalue="JUnit.FoodCtrlTest.calculateMealExtra" />
         <item itemvalue="JUnit.FoodCtrlTest.confirmNothi12213213ngOption" />
         <item itemvalue="JUnit.FoodCtrlTest.confirmNothin123123gOption" />
-        <item itemvalue="JUnit.FoodCtrlTest.confirmNothingOpt2131ion" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +423,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653568749353</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="pom.xml is absent, which is weird&#10;uploaded now anyway">
+      <created>1653578866345</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1653578866345</updated>
+    </task>
+    <task id="LOCAL-00023" summary="pom.xml is absent, which is weird&#10;uploaded now anyway">
+      <created>1653579032716</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1653579032716</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +491,8 @@
     <MESSAGE value="Added equal() for test purposes" />
     <MESSAGE value="entityDAO tests completed" />
     <MESSAGE value="All tests completed djlhvwkqld;bhjvkodvhqkl;odbhjkdlbhjkdsbhvwekl;dbhjqhdkl;shjvbkqw" />
-    <option name="LAST_COMMIT_MESSAGE" value="All tests completed djlhvwkqld;bhjvkodvhqkl;odbhjkdlbhjkdsbhvwekl;dbhjqhdkl;shjvbkqw" />
+    <MESSAGE value="pom.xml is absent, which is weird&#10;uploaded now anyway" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml is absent, which is weird&#10;uploaded now anyway" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
