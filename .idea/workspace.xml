@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Changed ui skin" />
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Added setTitle in PageSwitchHelper">
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -452,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653728151452</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added setTitle in PageSwitchHelper">
+      <created>1653728245523</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1653728245523</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +519,8 @@
     <MESSAGE value="added dependency for fancy ui" />
     <MESSAGE value="minor tweaks" />
     <MESSAGE value="Changed ui skin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed ui skin" />
+    <MESSAGE value="Added setTitle in PageSwitchHelper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added setTitle in PageSwitchHelper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
