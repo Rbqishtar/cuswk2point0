@@ -30,6 +30,7 @@ public class ShowFlightInfo_2 extends JFrame implements ActionListener {
 	 */
 	public ShowFlightInfo_2(String[] idNumAndFlightNo) {
 		odr = new Order();
+		this.setTitle("Flight kiosk");
 		ShowInfoCtrl dCtrl = new ShowInfoCtrl();
 		JsonObject jsonObj = dCtrl.fetchDetail(idNumAndFlightNo);
 

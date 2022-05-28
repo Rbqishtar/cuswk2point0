@@ -40,6 +40,7 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 	public ChooseMeal_4(Order odr) {
 
 		this.odr = odr;
+		this.setTitle("Flight kiosk");
 		FoodCtrl fCtrl = new FoodCtrl();
 		isWealthyAss = (Integer.parseInt(String.valueOf(odr.getSeatno().charAt(0))) <= 3) && (odr.getSeatno().length() == 2);
 

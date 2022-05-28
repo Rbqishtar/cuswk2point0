@@ -24,6 +24,7 @@ public class Welcome_0 extends JFrame implements ActionListener {
 	 * Constructor
 	 */
 	public Welcome_0() {
+		this.setTitle("Welcome");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 400);
 		contentPane = new JPanel();

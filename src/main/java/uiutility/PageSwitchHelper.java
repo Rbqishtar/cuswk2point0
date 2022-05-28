@@ -10,7 +10,6 @@ public class PageSwitchHelper {
     public static void goToPage(JFrame currentFrame, Order odr, int flag) {
         currentFrame.setVisible(false);
         JFrame newFrame = new JFrame();
-        newFrame.setTitle("Flight kiosk");
         switch (flag) {
             case 0 -> newFrame = new Welcome_0();
             case 1 -> newFrame = new PsgrLogin_1();

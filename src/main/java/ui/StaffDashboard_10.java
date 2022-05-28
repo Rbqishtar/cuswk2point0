@@ -41,7 +41,7 @@ public class StaffDashboard_10 extends JFrame implements ActionListener {
 	 * @param uname  The username of the staff, used in welcome title
 	 */
 	public StaffDashboard_10(String uname) {
-
+		this.setTitle("Flight kiosk");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1000, 600);
 		contentPane = new JPanel();

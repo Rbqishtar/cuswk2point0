@@ -31,6 +31,7 @@ public class OrderInfo_5 extends JFrame implements ActionListener {
 	 */
 	public OrderInfo_5(Order odr) {
 		this.odr = odr;
+		this.setTitle("Flight kiosk");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 400, 600);
 		contentPane = new JPanel();

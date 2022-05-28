@@ -40,6 +40,7 @@ public class ChooseSeat_3 extends JFrame implements ActionListener {
 	public ChooseSeat_3(Order odr) {
 
 		this.odr = odr;
+		this.setTitle("Flight kiosk");
 		SeatCtrl seatCtrl = new SeatCtrl();
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
