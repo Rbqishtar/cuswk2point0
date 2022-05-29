@@ -56,7 +56,8 @@ public class PsgrLoginCtrl {
         JOptionPane.showConfirmDialog(null, "You have checked in, mate" +
                         "\nFlight: " + checkodr.getFlightNo() +
                         "\nSeat: " + checkodr.getSeatno() +
-                        "\nFood : " + checkodr.getFoodType() + ", " + checkodr.getFoodMenu(),
+                        "\nFood : " + checkodr.getFoodType() + ", " + checkodr.getFoodMenu() +
+                        "\nDrink: " + checkodr.getDrink(),
                 "?", JOptionPane.YES_OPTION);
     }
 

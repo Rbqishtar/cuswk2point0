@@ -9,11 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Added setTitle in PageSwitchHelper">
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/PageSwitchHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uiutility/PageSwitchHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uiutility/PageSwitchHelper.class" afterDir="false" />
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Added title in all pages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/PsgrLoginCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uicontrol/PsgrLoginCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Finish_8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Finish_8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ShowFlightInfo_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ShowFlightInfo_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/StaffLogin_9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/StaffLogin_9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -471,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653728270205</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added title in all pages">
+      <created>1653728525618</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1653728525618</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +543,8 @@
     <MESSAGE value="minor tweaks" />
     <MESSAGE value="Changed ui skin" />
     <MESSAGE value="Added setTitle in PageSwitchHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added setTitle in PageSwitchHelper" />
+    <MESSAGE value="Added title in all pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added title in all pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
