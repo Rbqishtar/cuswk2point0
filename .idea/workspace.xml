@@ -9,17 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Added title in all pages">
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Added drink in jOptionPane pop up in psgrlogin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/PsgrLoginCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uicontrol/PsgrLoginCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Finish_8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Finish_8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/ShowFlightInfo_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ShowFlightInfo_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/StaffLogin_9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/StaffLogin_9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uicontrol/PsgrLoginCtrl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +67,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/work/apache-maven-3.3.9" />
+        <option name="mavenHome" value="/Library/apache-maven-3.8.5/bin" />
         <option name="useMavenConfig" value="true" />
-        <option name="userSettingsFile" value="D:\work\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -98,7 +90,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -484,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653728525618</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added drink in jOptionPane pop up in psgrlogin">
+      <created>1653823869165</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1653823869165</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +543,8 @@
     <MESSAGE value="Changed ui skin" />
     <MESSAGE value="Added setTitle in PageSwitchHelper" />
     <MESSAGE value="Added title in all pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added title in all pages" />
+    <MESSAGE value="Added drink in jOptionPane pop up in psgrlogin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added drink in jOptionPane pop up in psgrlogin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
