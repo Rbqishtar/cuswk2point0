@@ -9,22 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="\">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="halfway debug generation control">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/OrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/OrderInfo_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/OrderInfo_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Pay_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Pay_6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/PsgrLogin_1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/GenerationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/GenerationCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/PageFinalisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/PageFinalisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/OrderDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/OrderInfo_5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Pay_6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/PsgrLogin_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/PsgrLogin_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uicontrol/SeatCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uicontrol/SeatCtrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uiutility/PageFinalisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uiutility/PageFinalisation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +115,7 @@
       <recent name="entitydao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GenerationCtrl">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="cuswk2point0" />
@@ -257,8 +244,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GenerationCtrl" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.GenerationCtrl" />
         <item itemvalue="JAR Application.cuswk2point0-1.0-SNAPSHOT.jar" />
         <item itemvalue="JUnit.PaymentCtrlTest.verifyPayment" />
         <item itemvalue="JUnit.FoodCtrlTest.calculateMealExtra" />
@@ -499,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653885667618</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="halfway debug generation control">
+      <created>1653890054748</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1653890054748</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,6 +556,7 @@
     <MESSAGE value="Added drink in jOptionPane pop up in psgrlogin" />
     <MESSAGE value="added &lt;build&gt; in pom.xml" />
     <MESSAGE value="updated file path &amp; file structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated file path &amp; file structure" />
+    <MESSAGE value="halfway debug generation control" />
+    <option name="LAST_COMMIT_MESSAGE" value="halfway debug generation control" />
   </component>
 </project>

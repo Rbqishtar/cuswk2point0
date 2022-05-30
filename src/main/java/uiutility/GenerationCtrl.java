@@ -23,18 +23,16 @@ public class GenerationCtrl {
         try {
             Passenger psgr = new PassengerDAO().getPsgr(odr.getIdnum());
             Flight flight = new FlightDAO().getFlight(odr.getFlightNo());
-            String filename = "./" + psgr.getName() +"_"+ flight.getFlightno() +"_"+ flight.getFlightDate() + ".txt";
+            String filename = "./boarding_pass/" + psgr.getName() +"_"+ flight.getFlightno() + ".txt";
             File file = new File(filename);
             file.createNewFile();
             FileWriter out = new FileWriter(file);
             out.write("--------------------------------------------------------------\n");
-            out.write("\t\t\t" + "Your name: " + psgr.getName() + "\n");
-            out.write("\t\t\t" + "Flight number & destination: " + flight.getFlightno() + ", " + flight.getDest() + "\n");
-            out.write("\t\t\t" + "Flight date & time: " + flight.getFlightDate() + "," + flight.getTakeoffTime() + "\n");
-            out.write("\t\t\t" + "Counter number: " + (int)(50 * Math.random() + 1) + "\n");
-            out.write("\t\t\t" + "GOODBYE" + "\n");
-            out.write("\t\t\t\n");
-            out.write("\t\t\t\n");
+            out.write("Your name: " + psgr.getName() + "\n");
+            out.write("Flight number & destination: " + flight.getFlightno() + ", " + flight.getDest() + "\n");
+            out.write("Flight date & time: " + flight.getFlightDate() + "," + flight.getTakeoffTime() + "\n");
+            out.write("Counter number: " + (int)(50 * Math.random() + 1) + "\n");
+            out.write("GOODBYE" + "\n");
             out.write("--------------------------------------------------------------\n");
             out.close();
         } catch (IOException e) {
@@ -51,61 +49,20 @@ public class GenerationCtrl {
         try {
             Passenger psgr = new PassengerDAO().getPsgr(odr.getIdnum());
             Flight flight = new FlightDAO().getFlight(odr.getFlightNo());
-            String filename = "LuGGageTAg" +"_"+ psgr.getName() +"_"+ flight.getFlightno() +"_"+ flight.getFlightDate() + ".txt";
+            String filename = "./luggage_tag/LuGGageTAg" +"_"+ psgr.getName() +"_"+ flight.getFlightno() + ".txt";
             File file = new File(filename);
             file.createNewFile();
             FileWriter out = new FileWriter(file);
             out.write("--------------------------------------------------------------\n");
-            out.write("\t\t\t" + "Name: " + psgr.getName() + "\n");
-            out.write("\t\t\t" + "Flight number & destination: " + flight.getFlightno() + ", " + flight.getDest() + "\n");
-            out.write("\t\t\t" + "Flight date & time: " + flight.getFlightDate() + "," + flight.getTakeoffTime() + "\n");
-            out.write("\t\t\t" + "Luggage No: " + (50 * Math.random() + 1) + "\n");
+            out.write("Name: " + psgr.getName() + "\n");
+            out.write("Flight number & destination: " + flight.getFlightno() + ", " + flight.getDest() + "\n");
+            out.write("Flight date & time: " + flight.getFlightDate() + "," + flight.getTakeoffTime() + "\n");
+            out.write("Luggage No: " + (50 * Math.random() + 1) + "\n");
             out.write("----------------------------------------------------------------\n");
             out.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        Passenger psgr = new Passenger();
-        String[] eachline = new String[]{"narita taishin", "f", "17", "111", "false"};
-        psgr.setName(eachline[0]);
-        psgr.setSex(eachline[1]);
-        psgr.setAge(Integer.parseInt(eachline[2]));
-        psgr.setIdnum(eachline[3]);
-        psgr.setDisabled(Boolean.parseBoolean(eachline[4]));
-
-        Flight flight = new Flight();
-        eachline = new String[]{"AAAAAA", "AA1111", "12:00", "14:00", "a", "2022/3/29"};
-        //AAAAAA,AA1111,12:00,14:00,a,2022/3/29
-        flight.setRegisterno(eachline[0]);
-        flight.setFlightno(eachline[1]);
-        flight.setTakeoffTime(eachline[2]);
-        flight.setLandingTime(eachline[3]);
-        flight.setDest(eachline[4]);
-        flight.setFlightDate(eachline[5]);
-
-        System.out.println("Running in " + new File("").getAbsoluteFile());
-
-        try {
-            String filename = psgr.getName() + "_" + flight.getFlightno() + "_" + flight.getFlightDate() + ".txt";
-            FileWriter fw = new FileWriter(filename);
-            BufferedWriter out = new BufferedWriter(fw);
-            out.write("--------------------------------------------------------------\n");
-            out.write("\t\t\t" + "Your name: " + psgr.getName() + "\n");
-            out.write("\t\t\t" + "Flight number & destination: " + flight.getFlightno() + ", " + flight.getDest() + "\n");
-            out.write("\t\t\t" + "Flight date & time: " + flight.getFlightDate() + "," + flight.getTakeoffTime() + "\n");
-            out.write("\t\t\t" + "Counter number: " + (int) (50 * Math.random() + 1) + "\n");
-            out.write("\t\t\t" + "GOODBYE" + "\n");
-            out.write("\t\t\t\n");
-            out.write("\t\t\t\n");
-            out.write("--------------------------------------------------------------\n");
-            out.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
     }
 
 }
