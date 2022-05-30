@@ -66,7 +66,7 @@ public class OrderDAO {
 
         PrintWriter out = null;
         try {
-            out = new PrintWriter(new BufferedWriter(new FileWriter("Order.csv", true)));
+            out = new PrintWriter(new BufferedWriter(new FileWriter("./src/main/resources/Order.csv", true)));
             out.println(sb);
         }catch (IOException e) {
             System.err.println(e);

@@ -11,6 +11,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Font;
+import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -160,7 +161,11 @@ public class Pay_6 extends JFrame implements ActionListener {
 		} else if (e.getSource() == proceedOption) {
 			if (pc.verifyPayment((String)payMethod.getSelectedItem(), s1, s2, s3)) {
 				PageFinalisation pf = new PageFinalisation();
-				pf.finaliseEverything(odr);
+				try {
+					pf.finaliseEverything(odr);
+				} catch (IOException ex) {
+					ex.printStackTrace();
+				}
 				this.setVisible(false);
 			} else JOptionPane.showConfirmDialog(null, "Info cannot match");
 
