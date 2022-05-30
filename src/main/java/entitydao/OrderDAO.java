@@ -23,7 +23,7 @@ public class OrderDAO {
         String line = "";
         String splitBy = ",";
         try {
-            BufferedReader bf = new BufferedReader(new FileReader("Order.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/Order.csv"));
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 if (eachline[0].equals(idnum) && eachline[1].equals(flightNo)) {

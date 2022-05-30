@@ -23,7 +23,7 @@ public class PlaneDAO {
         String line = "";
         String splitBy = ",";
         try {
-            BufferedReader bf = new BufferedReader(new FileReader("Plane.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/Plane.csv"));
             while ((line = bf.readLine()) != null) {
                 Object[] eachline = line.split(splitBy);
                 if (eachline[0].equals(regno)) {

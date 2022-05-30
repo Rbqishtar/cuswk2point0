@@ -31,9 +31,9 @@ public class PaymentDAO {
         try {
 
             switch (mode) {
-                case 0 -> bf = new BufferedReader(new FileReader("Cards.csv"));
-                case 1 -> bf = new BufferedReader(new FileReader("Wechat.csv"));
-                case 2 -> bf = new BufferedReader(new FileReader("Alipay.csv"));
+                case 0 -> bf = new BufferedReader(new FileReader("./src/main/resources/Cards.csv"));
+                case 1 -> bf = new BufferedReader(new FileReader("./src/main/resources/Wechat.csv"));
+                case 2 -> bf = new BufferedReader(new FileReader("./src/main/resources/Alipay.csv"));
                 default -> { return false; }
             }
 

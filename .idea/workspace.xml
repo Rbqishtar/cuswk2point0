@@ -9,10 +9,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Added drink in jOptionPane pop up in psgrlogin">
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="added &lt;build&gt; in pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ChooseSeat_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AA1111_seats.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alipay.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BB2222_seats.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cards.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menu.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Order.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Passenger.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plane.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/BookingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/FlightDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/FlightDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/MenuDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/MenuDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/PassengerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/PassengerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/PaymentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/PaymentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/PlaneDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/PlaneDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entitydao/StaffDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entitydao/StaffDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ChooseSeat_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uicontrol/SeatCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uicontrol/SeatCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/BookingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/BookingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/FlightDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/FlightDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/MenuDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/MenuDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/OrderDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/PassengerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/PassengerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/PaymentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/PaymentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/PlaneDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/PlaneDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entitydao/StaffDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entitydao/StaffDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +95,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="/Library/apache-maven-3.8.5/bin" />
+        <option name="mavenHome" value="/Library/apache-maven-3.8.5" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -86,10 +114,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -221,22 +254,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodCtrlTest.confirmNothin123123gOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cuswk2point0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uiutility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uicontrol" />
-      <option name="MAIN_CLASS_NAME" value="uicontrol.FoodCtrlTest" />
-      <option name="METHOD_NAME" value="confirmNothin123123gOption" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PaymentCtrlTest.verifyPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuswk2point0" />
       <extension name="coverage">
@@ -253,13 +270,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cuswk2point0-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/cuswk2point0-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JAR Application.cuswk2point0-1.0-SNAPSHOT.jar" />
         <item itemvalue="JUnit.PaymentCtrlTest.verifyPayment" />
         <item itemvalue="JUnit.FoodCtrlTest.calculateMealExtra" />
         <item itemvalue="JUnit.FoodCtrlTest.confirmNothi12213213ngOption" />
-        <item itemvalue="JUnit.FoodCtrlTest.confirmNothin123123gOption" />
       </list>
     </recent_temporary>
   </component>
@@ -483,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653823869165</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added &lt;build&gt; in pom.xml">
+      <created>1653883410632</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1653883410632</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +572,8 @@
     <MESSAGE value="Added setTitle in PageSwitchHelper" />
     <MESSAGE value="Added title in all pages" />
     <MESSAGE value="Added drink in jOptionPane pop up in psgrlogin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added drink in jOptionPane pop up in psgrlogin" />
+    <MESSAGE value="added &lt;build&gt; in pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added &lt;build&gt; in pom.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -21,7 +21,7 @@ public class StaffDAO {
         String line = "";
         String splitBy = ",";
         try {
-            BufferedReader bf = new BufferedReader(new FileReader("Staff.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/Staff.csv"));
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 if (eachline[0].equals(username) && eachline[1].equals(password)) {

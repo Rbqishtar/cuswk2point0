@@ -29,7 +29,7 @@ public class BookingDAO {
         String line = "";
         String splitBy = ",";
         try {
-            BufferedReader bf = new BufferedReader(new FileReader("Booking.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/Booking.csv"));
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 for (int i=0; i<eachline.length; i++) {

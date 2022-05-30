@@ -40,7 +40,7 @@ public class FlightDAO {
         String line;
         String splitBy = ",";
         try {
-            BufferedReader bf = new BufferedReader(new FileReader("Flight.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/Flight.csv"));
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 if (eachline[1].equals(flightno)) {

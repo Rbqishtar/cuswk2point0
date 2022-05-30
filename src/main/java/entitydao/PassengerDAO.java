@@ -27,7 +27,7 @@ public class PassengerDAO {
         String splitBy = ",";
         try {
             //surName,foreName,sex,phoneNumber,age,idnum,disabled
-            BufferedReader bf = new BufferedReader(new FileReader("Passenger.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/Passenger.csv"));
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 if (eachline[3].equals(idnum)) {

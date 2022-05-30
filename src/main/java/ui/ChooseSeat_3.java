@@ -80,7 +80,7 @@ public class ChooseSeat_3 extends JFrame implements ActionListener {
 			layout = new JLabel("(Window) A B|  |C D E F|  |G H (Window)");
 		} else layout = new JLabel("ifjkodwisjfcildjfil");
 		p13.add(layoutTitle);
-		p13.add(layout);
+		p21.add(layout);
 
 		String[] seats;
 		if (seatCtrl.getColNumber(odr.getFlightNo()) == 6) {

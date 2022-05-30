@@ -23,7 +23,7 @@ public class MenuDAO {
         String splitBy = ",";
         try {
             //surName,foreName,sex,phoneNumber,age,idnum,disabled
-            BufferedReader bf = new BufferedReader(new FileReader("Menu.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/Menu.csv"));
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 if (eachline[0].equals(types)) {

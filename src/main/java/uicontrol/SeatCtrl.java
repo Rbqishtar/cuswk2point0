@@ -29,7 +29,7 @@ public class SeatCtrl {
         int i = 0;
         try {
             //surName,foreName,sex,phoneNumber,age,idnum,disabled
-            BufferedReader bf = new BufferedReader(new FileReader(flightno + "_seats.csv"));
+            BufferedReader bf = new BufferedReader(new FileReader("./src/main/resources/" + flightno + "_seats.csv"));
             while ((line = bf.readLine()) != null) {
                 String[] eachline = line.split(splitBy);
                 seats.add(eachline);
@@ -67,7 +67,7 @@ public class SeatCtrl {
         try {
             PrintWriter out;
             ArrayList<String[]> a = this.getSeat(flightno);
-            out = new PrintWriter(new BufferedWriter(new FileWriter(flightno + "_seats.csv")));
+            out = new PrintWriter(new BufferedWriter(new FileWriter("./src/main/resources/" + flightno + "_seats.csv")));
             a.get(row)[col - 1] = idnum;
             for (String[] s : a) {
                 String sb;
