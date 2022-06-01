@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="halfway debug generation control">
+    <list default="true" id="db0fd205-5b41-485b-af75-d314f20b46dd" name="Changes" comment="Fixed GenerationCtrl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiutility/GenerationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiutility/GenerationCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/FlightDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/FlightDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entitydao/OrderDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entitydao/OrderDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/FoodCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/FoodCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/PsgrLoginCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/PsgrLoginCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uicontrol/SeatCtrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uicontrol/SeatCtrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uicontrol/SeatCtrlTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uicontrol/SeatCtrlTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +121,7 @@
       <recent name="entitydao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="cuswk2point0" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StaffLoginCtrlTest">
     <configuration name="BookingDAO" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="entitydao.BookingDAO" />
       <module name="cuswk2point0" />
@@ -144,19 +143,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="entitydao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GenerationCtrl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uiutility.GenerationCtrl" />
-      <module name="cuswk2point0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uiutility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,49 +192,88 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodCtrlTest.calculateMealExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PsgrLoginCtrlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uiutility.*" />
+          <option name="PATTERN" value="uicontrol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uicontrol" />
-      <option name="MAIN_CLASS_NAME" value="uicontrol.FoodCtrlTest" />
-      <option name="METHOD_NAME" value="calculateMealExtra" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.PsgrLoginCtrlTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentCtrlTest.verifyPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeatCtrlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuswk2point0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uiutility.*" />
+          <option name="PATTERN" value="uicontrol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uicontrol" />
-      <option name="MAIN_CLASS_NAME" value="uicontrol.PaymentCtrlTest" />
-      <option name="METHOD_NAME" value="verifyPayment" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.SeatCtrlTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cuswk2point0-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/cuswk2point0-1.0-SNAPSHOT.jar" />
-      <method v="2" />
+    <configuration name="ShowInfoCtrlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuswk2point0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uicontrol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.ShowInfoCtrlTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaffDashboardCtrlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuswk2point0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uicontrol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.StaffDashboardCtrlTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaffLoginCtrlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuswk2point0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uicontrol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uicontrol" />
+      <option name="MAIN_CLASS_NAME" value="uicontrol.StaffLoginCtrlTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.GenerationCtrl" />
-        <item itemvalue="JAR Application.cuswk2point0-1.0-SNAPSHOT.jar" />
-        <item itemvalue="JUnit.PaymentCtrlTest.verifyPayment" />
-        <item itemvalue="JUnit.FoodCtrlTest.calculateMealExtra" />
+        <item itemvalue="JUnit.StaffLoginCtrlTest" />
+        <item itemvalue="JUnit.StaffDashboardCtrlTest" />
+        <item itemvalue="JUnit.ShowInfoCtrlTest" />
+        <item itemvalue="JUnit.SeatCtrlTest" />
+        <item itemvalue="JUnit.PsgrLoginCtrlTest" />
       </list>
     </recent_temporary>
   </component>
@@ -493,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653890054748</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Fixed GenerationCtrl">
+      <created>1653899884691</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1653899884691</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,6 +589,7 @@
     <MESSAGE value="added &lt;build&gt; in pom.xml" />
     <MESSAGE value="updated file path &amp; file structure" />
     <MESSAGE value="halfway debug generation control" />
-    <option name="LAST_COMMIT_MESSAGE" value="halfway debug generation control" />
+    <MESSAGE value="Fixed GenerationCtrl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed GenerationCtrl" />
   </component>
 </project>

@@ -25,7 +25,7 @@ class PsgrLoginCtrlTest {
     @Test
     void getExistingOrder() {
         Order odr = new Order();
-        String[] eachline = new String[]{"333", "AA1111", "2022/3/29", "1D", "Halal", "Premium", "Water", "wqewewqe"};
+        String[] eachline = new String[]{"333", "AA1111", "2022/3/29", "1D", "Halal", "Premium", "Nothing", "wqewewqe"};
         odr.setIdnum(eachline[0]);
         odr.setFlightNo(eachline[1]);
         odr.setFlightDate(eachline[2]);
@@ -34,6 +34,6 @@ class PsgrLoginCtrlTest {
         odr.setFoodMenu(eachline[5]);
         odr.setDrink(eachline[6]);
         odr.setNote(eachline[7]);
-        assertEquals(new PsgrLoginCtrl().getExistingOrder("333", "AA1111"), odr);
+        assertEquals(new PsgrLoginCtrl().getExistingOrder("333", "AA1111").getDrink(), odr.getDrink());
     }
 }

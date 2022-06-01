@@ -59,19 +59,6 @@ class FlightDAOTest {
         assertEquals(new FlightDAO().getBoardingTime(flt), "23:16");
     }
 
-    @Test
-    void getFlight() {
-        Flight flt = new Flight();
-        String[] eachline = new String[]{"1", "2", "12:00", "12:01", "3", "4"};
-        flt.setRegisterno(eachline[0]);
-        flt.setFlightno(eachline[1]);
-        flt.setTakeoffTime(eachline[2]);
-        flt.setLandingTime(eachline[3]);
-        flt.setDest(eachline[4]);
-        flt.setFlightDate(eachline[5]);
-
-
-    }
 
     @Test
     void getFlightTime1() {

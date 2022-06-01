@@ -17,31 +17,40 @@ class FoodCtrlTest {
     }
 
     @Test
-    void confirmNothingOption() {
+    void confirmNothingOptionYESYES() {
         entity.Order odr = new entity.Order();
         odr.setDrink("Nothing");
-        odr.setFoodType("Nothing");
-        assertFalse(new FoodCtrl().confirmNothingOption(odr));
-    }
-
-    @Test
-    void confirmNothingOpt2131ion() {
-        entity.Order odr = new entity.Order();
-        odr.setDrink("Nothin2323132123g");
         odr.setFoodType("Nothing");
         assertTrue(new FoodCtrl().confirmNothingOption(odr));
     }
 
     @Test
-    void confirmNothin123123gOption() {
+    void confirmNothingOptionYESNO() {
         entity.Order odr = new entity.Order();
         odr.setDrink("Nothing");
-        odr.setFoodType("Not232131223hing");
-        assertTrue(new FoodCtrl().confirmNothingOption(odr));
+        odr.setFoodType("Nothing");
+        assertTrue(!new FoodCtrl().confirmNothingOption(odr));
     }
 
     @Test
-    void confirmNothi12213213ngOption() {
+    void confirmNothingOptionNOYES() {
+        entity.Order odr = new entity.Order();
+        odr.setDrink("Nothing");
+        odr.setFoodType("Nothing");
+        assertTrue(!new FoodCtrl().confirmNothingOption(odr));
+    }
+
+    @Test
+    void confirmNothingOptionNONO() {
+        entity.Order odr = new entity.Order();
+        odr.setDrink("Nothing");
+        odr.setFoodType("Nothing");
+        assertTrue(!new FoodCtrl().confirmNothingOption(odr));
+    }
+
+
+    @Test
+    void confirmNothingOptionNOYESNEEDED() {
         entity.Order odr = new entity.Order();
         odr.setDrink("Nothi31212ng");
         odr.setFoodType("Not12312312312323hing");

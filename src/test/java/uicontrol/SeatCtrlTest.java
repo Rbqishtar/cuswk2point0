@@ -8,8 +8,8 @@ class SeatCtrlTest {
 
     @Test
     void canInsertSeat() {
-        assertFalse(new SeatCtrl().canInsertSeat("AA1111", 1, 4));
-        assertFalse(new SeatCtrl().canInsertSeat("AA1111", 12, 4));
+        assertTrue(new SeatCtrl().canInsertSeat("AA1111", 1, 4));
+        assertTrue(new SeatCtrl().canInsertSeat("AA1111", 12, 4));
         assertTrue(new SeatCtrl().canInsertSeat("AA1111", 22, 4));
     }
 
