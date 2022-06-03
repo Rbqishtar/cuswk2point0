@@ -134,9 +134,8 @@ public class ChooseMeal_4 extends JFrame implements ActionListener {
 		odr.setDrink((String)drinkBox.getSelectedItem());
 		odr.setFoodType((String)foodTypeBox.getSelectedItem());
 		odr.setFoodMenu("Premium");
-		if (odr.getDrink().equals("Nothing")) JOptionPane.showConfirmDialog(null, "You chose to drink nothing");
-		if (odr.getFoodType().equals("Nothing")) JOptionPane.showConfirmDialog(null, "You chose to eat nothing");
-		PageSwitchHelper.goToPage(this, odr, 5);
+		if (new FoodCtrl().confirmNothingOption(odr));
+			PageSwitchHelper.goToPage(this, odr, 5);
 	}
 
 	/**
